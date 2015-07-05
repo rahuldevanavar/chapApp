@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/tool_bar_color</item>
+    </style>
+
+    <style name="title_large">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="title_medium">
+        <item name="android:textSize">16sp
+        </item>
+    </style>
+
+    <style name="title_medium.bold" parent="title_medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="title_small">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="title_small.bold" parent="title_small">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="tool_bar_color">#c5c4c4</color>
+    <color name="line_color">#E4E4E2</color>
+    <color name="time_color">#919BAC</color>
+</resources>
