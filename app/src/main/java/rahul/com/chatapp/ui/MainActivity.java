@@ -1,6 +1,5 @@
 package rahul.com.chatapp.ui;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +10,6 @@ import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -80,8 +78,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mDataBaseHandler.insertMessage(item);
             mMessageRecyclerView.getScrollState();
             mMessageEditText.setText("");
-            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
-            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+            mMessageRecyclerView.smoothScrollToPosition(mAdapter.getItemCount()-1);
+            //   InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+            // inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
 
         } else {
             Toast.makeText(this, "Please enter text", Toast.LENGTH_SHORT).show();
